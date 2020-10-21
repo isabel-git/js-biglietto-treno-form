@@ -9,12 +9,8 @@
 // nome passeggero
 var tiketNome = document.getElementById("tiketNome");
 var nome = document.getElementById("campoNome");
+var el = document.getElementById("tiket");
 console.log("nome",nome.value);
-
-
-// var km = document.getElementById("campoKm");
-// var eta = document.getElementById("campoEta");
-// var  = document.getElementById("nomeutente");
 
 
 // km da percorrere
@@ -35,4 +31,5 @@ function() {
   tiketNome.innerHTML = nome.value;
   tiketKm.innerHTML = km.value;
   tiketSelect.innerHTML = mySelect.options[mySelect.selectedIndex].value;
+  el.className = "visible";
 } );
