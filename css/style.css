@@ -12,4 +12,23 @@
 .visible{
   display: block;
   background-color: red;
+  padding: 10px;
+}
+
+.bordo{
+  border: 1px solid #ccc;
+  display: flex;
+  min-height: 100px;
+}
+
+.padd{
+  padding: 20px;
+}
+
+.info{
+  background-color: #ccc;
+}
+
+h4{
+  margin-bottom: 30px;
 }
