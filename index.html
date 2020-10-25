@@ -8,61 +8,77 @@
   </head>
   <body>
 
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
 
-    <form id="myForm" action="index.html" method="post">
-      <p>Nome Cognome</p>
-      <input id="campoNome" type="text" name="" value="" placeholder="Inserisci il tuo nome">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-      <p>Km da percorrere</p>
-      <input id="campoKm" type="number" name="" value="">
+      <form id="myForm" action="index.html" method="post">
+        <div class="datiUte">
 
-      <p>Fascia d'età</p>
-      <select id="mySelect" class="" name="">
-        <option value="Minorenne">Minorenne</option>
-        <option value="Maggiorenne">Maggiorenne</option>
-        <option value="Over 65">Over 65</option>
-      </select>
+          <div class="left">
+            <p>Nome Cognome</p>
+            <input id="campoNome" type="text" name="" value="" placeholder="Inserisci il tuo nome">
+          </div>
 
-      <button id="mybutton" type="button" name="button">Genera</button>
-      <button id="myResetbutton" type="button" name="button">Annulla</button>
-    </form>
+          <div class="center">
+            <p>Km da percorrere</p>
+            <input id="campoKm" type="number" name="" value="" placeholder="Inserisci Km">
+          </div>
 
-    <!-- biglietto -->
-
-    <div id="tiket" class="hidden">
-      <h3>DETTAGLIO PASSEGGERO</h3>
-      <div class="bordo">
-
-        <div class="info padd">
-          <h3>NOME PASSEGGERO</h3>
-          <h4 id="tiketNome"></h4>
+          <div class="right">
+            <p>Fascia d'età</p>
+            <select id="mySelect" class="" name="">
+              <option value="Minorenne">Minorenne</option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Over 65">Over 65</option>
+            </select>
+          </div>
         </div>
 
-        <div class="padd">
-          <h4>N. Km</h4>
-          <p id="tiketKm"></p>
+        <div class="bottoni">
+          <button id="mybutton" type="button" name="button">Genera</button>
+          <button id="myResetbutton" type="button" name="button">Annulla</button>
         </div>
+      </form>
 
-        <div class="padd">
-          <h4>Offerta</h4>
-          <p id="tiketSelect"></p>
-          <p id="sconto"></p>
-        </div>
+      <!-- biglietto -->
+      <h2>IL TUO BIGLIETTO</h2>
 
-        <div class="padd">
-          <h4>Carrozza</h4>
-          <p id="carrozza"></p>
-        </div>
+      <div id="tiket" class="hidden">
+        <h3>DETTAGLIO PASSEGGERO</h3>
+        <div class="bordo">
 
-        <div class="padd">
-          <h4>Codice CP</h4>
-          <p id="codiceCP"></p>
-        </div>
+          <div class="info padd">
+            <h3>NOME PASSEGGERO</h3>
+            <h4 id="tiketNome"></h4>
+          </div>
 
-        <div class="padd">
-          <h4>Costo biglietto</h4>
-          <p id="costo"></p>
+          <div class="padd">
+            <h4>N. Km</h4>
+            <p id="tiketKm"></p>
+          </div>
+
+          <div class="padd">
+            <h4>Offerta</h4>
+            <p id="tiketSelect"></p>
+            <p id="sconto"></p>
+          </div>
+
+          <div class="padd">
+            <h4>Carrozza</h4>
+            <p id="carrozza"></p>
+          </div>
+
+          <div class="padd">
+            <h4>Codice CP</h4>
+            <p id="codiceCP"></p>
+          </div>
+
+          <div class="padd">
+            <h4>Costo biglietto</h4>
+            <p id="costo"></p>
+          </div>
+
         </div>
 
       </div>
